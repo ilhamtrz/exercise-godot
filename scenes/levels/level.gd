@@ -10,5 +10,5 @@ func _process(_delta):
 	pass
 
 
-func _on_area_2d_body_entered(body):
+func _on_area_2d_body_entered(_body):
 	print("body has entered")
