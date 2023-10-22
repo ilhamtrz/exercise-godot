@@ -15,3 +15,11 @@ func _process(_delta):
 
 func _on_gate_player_entered_gate():
 	print("player has entered the gate")
+
+
+func _on_player_laser_shoot():
+	print("laser shoot from level")
+
+
+func _on_player_grenade_throw():
+	print("grenade throw from level")

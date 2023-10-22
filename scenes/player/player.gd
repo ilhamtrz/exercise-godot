@@ -5,6 +5,8 @@ var can_laser: bool = true
 var can_grenade: bool = true
 const grenade_timer: float = 2
 const laser_timer: float = 0.5
+signal laser_shoot
+signal grenade_throw
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -23,12 +25,12 @@ func _process(_delta):
 	
 	#shooting input
 	if Input.is_action_just_pressed("primary action") and can_laser:
-		print('shoot laser')
+		laser_shoot.emit()
 		can_laser = false
 		$LaserTimer.start()
 	
 	if Input.is_action_just_pressed("secondary action") and can_grenade:
-		print("throw grenade")
+		grenade_throw.emit()
 		can_grenade = false
 		$GrenadeTimer.start()
 
