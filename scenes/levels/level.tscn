@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://ceeiwfuy7tnjy"]
+[gd_scene load_steps=6 format=3 uid="uid://ceeiwfuy7tnjy"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_t4sa0"]
 [ext_resource type="PackedScene" uid="uid://bcyrjdrourjn2" path="res://scenes/player/player.tscn" id="3_djygy"]
+[ext_resource type="PackedScene" uid="uid://cp2un2ol0cjxb" path="res://scenes/objects/toilet.tscn" id="4_mncvn"]
 [ext_resource type="PackedScene" uid="uid://ir2cfwdh55bw" path="res://scenes/enemies/drone.tscn" id="4_ppht6"]
 [ext_resource type="PackedScene" uid="uid://dunfwqvma8j21" path="res://scenes/objects/bed.tscn" id="5_6nffb"]
 
@@ -15,5 +16,9 @@ scale = Vector2(0.5, 0.5)
 [node name="bed" parent="." instance=ExtResource("5_6nffb")]
 position = Vector2(795, 125)
 
+[node name="toilet" parent="." instance=ExtResource("4_mncvn")]
+position = Vector2(82, 79)
+scale = Vector2(0.5, 0.5)
+
 [node name="drone" parent="." instance=ExtResource("4_ppht6")]
-position = Vector2(396, 535)
+position = Vector2(418, 526)

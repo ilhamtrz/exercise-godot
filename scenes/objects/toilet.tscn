@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cp2un2ol0cjxb"]
+
+[ext_resource type="Texture2D" uid="uid://bpukddiv6x3rp" path="res://graphics/objects/toilet.png" id="1_5bwvk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5q1fi"]
+radius = 117.068
+
+[node name="toilet" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_5bwvk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5q1fi")
