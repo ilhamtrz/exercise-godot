@@ -1,4 +1,4 @@
-extends Node2D
+extends CharacterBody2D
 
 var speed: float = 500
 
